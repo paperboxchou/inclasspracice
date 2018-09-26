@@ -1,0 +1,13 @@
+---
+title: "2018/9/19"
+output: html_notebook
+---
+
+```{r}
+aVector<-c(5,6,7)
+```
+
+```{r}
+a<-5
+```
+
