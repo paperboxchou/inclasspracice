@@ -15,6 +15,9 @@ studentID <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/m
 str_sub(studentID$學號,5,6)->aa
 table(aa)
 
+str_c(letters,LETTERS)
+str_c(letters,LETTERS,sep="-")
+str_c("lowercase: ", letters, ", capital: ",LETTERS)
 
 ```
 
