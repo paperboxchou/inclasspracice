@@ -60,6 +60,7 @@ ncol(classSurvey)
 1.2
 ```{r}
 class(classSurvey$學號)
+iui
 # 學號轉成character
 classSurvey$學號 <- as.character(classSurvey$學號)
 # 學號取出字串第2-4位 存成 年級
@@ -69,6 +70,7 @@ classSurvey$年級 <- str_sub(classSurvey$學號,2,4)
 classSurvey$年級 <- as.factor(classSurvey$年級)
 # 年級進行 generic replacement
 levels(classSurvey$年級) <- c("大四及以上","大三","大二","大一")
+
 ```
 
 1.3
