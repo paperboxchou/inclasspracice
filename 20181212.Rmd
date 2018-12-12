@@ -1,0 +1,62 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
+```
+
+```{r}
+libraryData$書籍館藏地 %>% as.factor %>% levels -> storageLocations
+storageLocations
+```
+
+```{r}
+libraryData$學院 %>% as.factor %>% levels -> college
+ #0 
+collegeBorrowCount <- vector("numeric",length(college))
+for(i in c(1:length(college))){
+#1
+college_i <- college[i]
+#2
+numericalIndexForSubsample<-which(libraryData$學院 == college_i)
+collegesubsample_i <- libraryData[numericalIndexForSubsample,]
+#3
+collegeBorrowCount_i <- nrow(collegesubsample_i)
+#4
+collegeBorrowCount[[i]]<-collegeBorrowCount_i 
+ }
+```
+
+```{r}
+libraryData$學號 %>% as.factor %>% levels -> student
+studentBorrow <- vector("numeric", length(student))
+for(i in c(1:length(student))){
+student_i <- student[i]
+numericalIndex <- which(libraryData$學號 == student_i)
+studentSubsample_i <- libraryData[numericalIndex,]
+studentBorrow_i <- nrow(studentSubsample_i)
+studentBorrow[[i]] <- studentBorrow_i
+}
+
+```
+
+libraryData$學院 %>% as.factor %>% levels -> college
+ #0 
+collegeBorrowCount <- vector("numeric",length(college))
+for(i in c(1:length(college))){
+#1
+college_i <- college[i]
+#2
+numericalIndexForSubsample<-which(libraryData$學院 == college_i)
+collegesubsample_i <- libraryData[numericalIndexForSubsample,]
+#3
+collegeBorrowCount_i <- nrow(collegesubsample_i)
+#4
+collegeBorrowCount[[i]]<-collegeBorrowCount_i 
+ }

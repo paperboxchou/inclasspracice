@@ -8,3 +8,19 @@ library(readr)
 libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
 ```
 
+```{r}
+libraryData %>% 
+  mutate_at(
+    vars(學院, 書籍館藏地, 書籍類別),
+    funs(
+      as.factor(.)
+    )
+  ) -> libraryData
+
+libraryData %>%
+  mutate(
+    借閱時間= ymd_hms(., )
+    ㄑ
+  )
+```
+
