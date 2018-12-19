@@ -1,0 +1,10 @@
+```{r}
+library(readr)
+libraryData <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/library100_102.csv")
+```
+
+```{r}
+libraryData %>%
+  filter(between(入學年,100,102), 學院=="社會科學院") 
+```
+
