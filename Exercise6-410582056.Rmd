@@ -4,7 +4,7 @@ date: "12/15/2018"
 params:
   id: 410582056
   name: 周子翔
-  repoURL: "這個作業的GitHub repo網址（選填）"
+  repoURL: https://github.com/paperboxchou/inclasspracice/blob/master/Exercise6-410582056.Rmd
 ---
 作業上傳截止日期：2018-12-23 00:00:00 Asia/Taipei Time (即台灣時間22號半夜12點，或23號凌晨0點)
 作業上傳網址：https://docs.google.com/forms/d/e/1FAIpQLScyV1OCzaeg-2CeSev6aibpTruGhQ2gg-NeWbCX2EQnK1DxxA/viewform?entry.1232937468=Exercise6
