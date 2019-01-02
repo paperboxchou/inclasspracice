@@ -13,6 +13,7 @@ library(readr); library(dplyr); library(stringr); library(lubridate)
 
 ```{r}
 install.packages("plotly")
+
 ```
 
 ```{r}
@@ -34,4 +35,11 @@ plasticContainer[["greenBox"]] # or plasticContainer[[1]]
 
 ```{r}
 plasticContainer$greenBox
+cc <- 23
 ```
+
+```{r}
+library(plotly)
+
+```
+
